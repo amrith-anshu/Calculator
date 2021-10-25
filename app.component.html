@@ -1,0 +1,89 @@
+<head>
+</head>
+<!-- create table -->
+<body style="background-color:wheat;">
+
+  <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image1"></div>
+      <mat-card-title>Creator</mat-card-title>
+      <mat-card-subtitle>Kesoju Amrithanshu</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://media-exp1.licdn.com/dms/image/C5603AQF-Ccv8Guh9mA/profile-displayphoto-shrink_800_800/0/1617985236033?e=1640822400&v=beta&t=z8Vt79Oz3FM3smcMRg1WaxxYiwScQcJYBBWplZMwnBw" alt="Photo of a Creator"
+         height= "140" width="100" >
+    <mat-card-content>
+    </mat-card-content>
+  </mat-card>
+  
+  <div class="example-button-row">
+    <button mat-button color="primary">Like</button>
+    <a mat-button href="https://www.linkedin.com/in/kesoju-amrithanshu-956a17190/">Linkedin Profile</a>
+  </div>
+
+    <header>
+    </header>
+    <br>
+    <table style="border: 2px solid black; width:40%; height:500px; margin-left: auto; margin-right: auto;
+    background-color: lightsalmon;">
+      <tr>
+        <td colspan="4"><input type="text" id="result" /></td>
+      </tr>
+      <tr>
+        <!-- create button and assign value to each button -->
+        <!-- dis("1") will call function dis to display value -->
+        <td style="width: 10%;"><input type="button" value="1" onclick="dis('1')" /> </td>
+        <td style="width: 10%;"><input type="button" value="2" onclick="dis('2')" /> </td>
+        <td style="width: 10%;"><input type="button" value="3" onclick="dis('3')" /> </td>
+        <td style="width: 10%;"><input type="button" value="/" onclick="dis('/')" /> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="dis('4')" /> </td>
+        <td><input type="button" value="5" onclick="dis('5')" /> </td>
+        <td><input type="button" value="6" onclick="dis('6')" /> </td>
+        <td><input type="button" value="-" onclick="dis('-')" /> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="dis('7')" /> </td>
+        <td><input type="button" value="8" onclick="dis('8')" /> </td>
+        <td><input type="button" value="9" onclick="dis('9')" /> </td>
+        <td><input type="button" value="+" onclick="dis('+')" /> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="." onclick="dis('.')" /> </td>
+        <td><input type="button" value="0" onclick="dis('0')" /> </td>
+        <td><input type="button" value="*" onclick="dis('*')" /> </td>
+
+        <td><input type="button" value="c" onclick="clr()" /> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="!" onclick="dis('!')" /> </td>
+        <td><input type="button" value="isPrime" onclick="dis('isPrime')" /> </td>
+        <td colspan="2"><input type="button" value="=" onclick="solve()" /> </td>
+      </tr>
+    </table>
+    <br><br>
+
+
+
+
+  </body>
+
+
+  <router-outlet></router-outlet>
+
